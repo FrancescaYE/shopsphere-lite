@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ShopSphere Lite</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+    <div class="container nav">
+        <a class="brand" href="{{ url_for('index') }}">
+            ShopSphere Lite
+        </a>
+
+        <a class="button secondary" href="{{ url_for('add_product') }}">
+            Add product
+        </a>
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="hero">
+        <p class="eyebrow">Demo e-commerce application</p>
+
+        <h1>
+            Simple catalogue, built for our Cloud journey.
+        </h1>
+
+        <p>
+            Browse products, search the catalogue, and add a product.
+        </p>
+    </section>
+
+    <form class="search" method="get" action="{{ url_for('index') }}">
+
+        <input
+            name="q"
+            value="{{ search }}"
+            placeholder="Search by product or category"
+        >
+
+        <button class="button" type="submit">
+            Search
+        </button>
+
+    </form>
+
+    <section class="products">
+
+        {% for product in products %}
+
+        <article class="card">
+
+            <span class="tag">
+                {{ product["category"] }}
+            </span>
+
+            <h2>
+                {{ product["name"] }}
+            </h2>
+
+            <p>
+                {{ product["description"] }}
+            </p>
+
+            <div class="card-footer">
+
+                <strong>
+                    ${{ "%.2f"|format(product["price"]) }}
+                </strong>
+
+                <a href="{{ url_for('product', product_id=product['id']) }}">
+                    View details →
+                </a>
+
+            </div>
+
+        </article>
+
+        {% else %}
+
+        <p>No products found.</p>
+
+        {% endfor %}
+
+    </section>
+
+</main>
+
+</body>
+</html>
