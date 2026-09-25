@@ -8,7 +8,7 @@ Ce projet fait partie de mon Cloud Engineering Journey et me sert de laboratoire
 
 L’application est actuellement déployée sur Microsoft Azure App Service.
 
-👉 Ouvrir ShopSphere Lite
+https://shopsphere-lite-francesca-adamgsc3ecg9dufx.southafricanorth-01.azurewebsites.net/
 
 L’application peut être consultée directement depuis le lien ci-dessus.
 
@@ -59,18 +59,16 @@ Architecture
                             ▼
                      SQLite Database
 
-Composants Azure
-
-Composant	Configuration
-Service	Azure App Service
-Type de publication	Code
-Système d’exploitation	Linux
-Runtime	Python 3.12
-Région	South Africa North
-Plan App Service	Free F1
-Déploiement	ZIP Deployment
-Serveur d’application	Gunicorn
-Instances	1
+Composants Azure            Composant	Configuration
+Service	                      Azure App Service
+Type de publication	           Code
+Système d’exploitation         Linux
+Runtime	                       Python 3.12
+Région	                       South Africa North
+Plan App Service	             Free F1
+Déploiement                  	ZIP Deployment
+Serveur d’application	        Gunicorn
+Instances                   	1
 
 Pourquoi Azure App Service ?
 
@@ -171,5 +169,4 @@ L’objectif final est de transformer progressivement cette application en un pr
 🎓 Cloud Engineering Journey
 
 ShopSphere Lite est développé dans le cadre de ma préparation à la certification Microsoft AZ-900 et de mon parcours vers des rôles de Cloud Engineer / Azure Administrator / Cloud Operations Engineer / Infrastructure Engineer.
-* Gunicorn
-* Git / GitHub
+
