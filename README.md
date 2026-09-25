@@ -59,16 +59,19 @@ Architecture
                             ▼
                      SQLite Database
 
-Composants Azure            Composant	Configuration
-Service	                      Azure App Service
-Type de publication	           Code
-Système d’exploitation         Linux
-Runtime	                       Python 3.12
-Région	                       South Africa North
-Plan App Service	             Free F1
-Déploiement                  	ZIP Deployment
-Serveur d’application	        Gunicorn
-Instances                   	1
+### 🧩 Composants & Configuration Azure
+
+| Composant | Configuration |
+| :--- | :--- |
+| *Service Azure* | Azure App Service |
+| *Type de publication* | Code |
+| *Système d'exploitation* | Linux |
+| *Runtime* | Python 3.12 |
+| *Région* | South Africa North |
+| *Plan App Service* | Free (F1) |
+| *Méthode de déploiement* | ZIP Deployment |
+| *Serveur d'application* | Gunicorn |
+| *Instances* | 1 |
 
 Pourquoi Azure App Service ?
 
