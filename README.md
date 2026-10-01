@@ -1,10 +1,15 @@
 # ShopSphere Lite
 
-ShopSphere Lite est une petite application e-commerce développée avec Python et Flask.
+ShopSphere Lite est une petite application e-commerce développée avec Python et Flask et actuellement déployé sur Microsoft Azure
+sur une Virtual Machine Linux.
 
 Ce projet fait partie de mon Cloud Engineering Journey et sert de laboratoire pratique pour apprendre à concevoir, déployer, sécuriser, dépanner et documenter progressivement une infrastructure Cloud sur Microsoft Azure.
 
 L’objectif n’est pas uniquement de développer une application web, mais de faire évoluer progressivement son infrastructure afin de mettre en pratique les concepts du Cloud Engineering.
+
+### Aperçu
+
+![ShopSphere Lite](docs/images/shopsphere-home.png)
 
 ---
 
