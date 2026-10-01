@@ -198,6 +198,3 @@ ShopSphere Lite est développé dans le cadre de mon Cloud Engineering Journey. 
 L’objectif est de construire progressivement une infrastructure Cloud complète tout en développant mes compétences en déploiement, réseau, sécurité, supervision, automatisation et troubleshooting.
 **Author:** Francesca
 *Cloud Engineering Journey — Azure*
-
-
-```
