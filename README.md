@@ -51,27 +51,27 @@ ShopSphere Lite évolue progressivement au fil de mon parcours Azure. Les procha
 ## Architecture actuelle
 
 text
-Internet 
-  | 
-  v 
-Public IP 
-  | 
-  v 
-Network Security Group (NSG) 
-  | 
-  v 
-TCP 8000 
-  | 
-  v 
-Azure Linux VM 
-  | 
-  v 
-Gunicorn (:8000) 
-  | 
-  v 
-Flask 
-  | 
-  v 
+Internet
+  |
+  v
+Public IP
+  |
+  v
+Network Security Group
+  |
+  v
+TCP 8000
+  |
+  v
+Azure Linux VM
+  |
+  v
+Gunicorn :8000
+  |
+  v
+Flask
+  |
+  v
 SQLite
 
 
@@ -89,18 +89,18 @@ La VM est intégrée dans un réseau virtuel Azure dédié. Le Network Security 
 ## Déploiement de l’application
 L’application Flask est exécutée sur la VM Linux avec Gunicorn.
 text
-Flask application 
-  | 
-  v 
-Gunicorn 
-  | 
-  v 
-TCP :8000 
-  | 
-  v 
-Azure NSG 
-  | 
-  v 
+Flask application
+  |
+  v
+Gunicorn
+  |
+  v
+TCP :8000
+  |
+  v
+Azure NSG
+  |
+  v
 Public IP
 
 
@@ -123,50 +123,50 @@ Les tests effectués comprennent notamment :
 ## Troubleshooting
 Une démarche structurée est utilisée lors des problèmes :
 text
-Observe 
-  | 
-  v 
-Hypothèses 
-  | 
-  v 
-Vérifications 
-  | 
-  v 
-Interprétation 
-  | 
-  v 
-Diagnostic 
-  | 
-  v 
-Solution 
-  | 
-  v 
+Observe
+  |
+  v
+Hypothèses
+  |
+  v
+Vérifications
+  |
+  v
+Interprétation
+  |
+  v
+Diagnostic
+  |
+  v
+Solution
+  |
+  v
 Validation
 
 
 Pour les problèmes de connectivité, le raisonnement suit le chemin suivant :
 text
-DNS 
-  | 
-  v 
-Endpoint / IP 
-  | 
-  v 
-Routing 
-  | 
-  v 
-NSG 
-  | 
-  v 
-OS Firewall 
-  | 
-  v 
-Port / Protocol 
-  | 
-  v 
-Service / Listener 
-  | 
-  v 
+DNS
+  |
+  v
+Endpoint / IP
+  |
+  v
+Routing
+  |
+  v
+NSG
+  |
+  v
+OS Firewall
+  |
+  v
+Port / Protocol
+  |
+  v
+Service / Listener
+  |
+  v
 Application
 
 
