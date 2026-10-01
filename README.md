@@ -49,16 +49,35 @@ ShopSphere Lite évolue progressivement au fil de mon parcours Azure. Les procha
 
 ## Architecture actuelle
 
-mermaid
-flowchart TD
-    A["Internet"] --> B["Public IP"]
-    B --> C["Network Security Group"]
-    C --> D["TCP 8000"]
-    D --> E["Azure Linux VM"]
-    E --> F["Gunicorn :8000"]
-    F --> G["Flask"]
-    G --> H["SQLite"]
+*Internet*
 
+⬇️
+
+*Public IP*
+
+⬇️
+
+*Network Security Group*
+
+⬇️
+
+*TCP 8000*
+
+⬇️
+
+*Azure Linux VM*
+
+⬇️
+
+*Gunicorn :8000*
+
+⬇️
+
+*Flask*
+
+⬇️
+
+*SQLite*
 
 > *Note :* Gunicorn est directement exposé sur le port 8000 dans cette version de laboratoire. Nginx n’est pas utilisé dans ShopSphere Lite (une configuration avec Nginx a été utilisée séparément dans le projet autonome GreenCart).
 
@@ -82,13 +101,23 @@ La VM est intégrée dans un réseau virtuel Azure dédié. Le Network Security 
 
 L’application Flask est exécutée sur la VM Linux avec Gunicorn.
 
-mermaid
-flowchart TD
-    A["Flask application"] --> B["Gunicorn"]
-    B --> C["TCP :8000"]
-    C --> D["Azure NSG"]
-    D --> E["Public IP"]
+*Flask application*
 
+⬇️
+
+*Gunicorn*
+
+⬇️
+
+*TCP :8000*
+
+⬇️
+
+*Azure NSG*
+
+⬇️
+
+*Public IP*
 
 Le déploiement comprend notamment :
 
@@ -119,28 +148,63 @@ Les tests effectués comprennent notamment :
 
 Une démarche structurée est utilisée lors des problèmes :
 
-mermaid
-flowchart TD
-    A["Observe"] --> B["Hypothèses"]
-    B --> C["Vérifications"]
-    C --> D["Interprétation"]
-    D --> E["Diagnostic"]
-    E --> F["Solution"]
-    F --> G["Validation"]
+*Observe*
 
+⬇️
+
+*Hypothèses*
+
+⬇️
+
+*Vérifications*
+
+⬇️
+
+*Interprétation*
+
+⬇️
+
+*Diagnostic*
+
+⬇️
+
+*Solution*
+
+⬇️
+
+*Validation*
 
 Pour les problèmes de connectivité, le raisonnement suit le chemin suivant :
 
-mermaid
-flowchart TD
-    A["DNS"] --> B["Endpoint / IP"]
-    B --> C["Routing"]
-    C --> D["NSG"]
-    D --> E["OS Firewall"]
-    E --> F["Port / Protocol"]
-    F --> G["Service / Listener"]
-    G --> H["Application"]
+*DNS*
 
+⬇️
+
+*Endpoint / IP*
+
+⬇️
+
+*Routing*
+
+⬇️
+
+*NSG*
+
+⬇️
+
+*OS Firewall*
+
+⬇️
+
+*Port / Protocol*
+
+⬇️
+
+*Service / Listener*
+
+⬇️
+
+*Application*
 
 Cette méthode permet de distinguer progressivement un problème lié au DNS, au réseau Azure, au NSG, à Linux, au Firewall, au Port, au Service ou à l’Application.
 
