@@ -139,11 +139,11 @@ La machine virtuelle est déployée dans le sous-réseau subnet-web.
 
 #### Vue d’ensemble du réseau virtuel
 
-![Vue d'ensemble du VNet](docs/images/azure-vnet-overview.png)
+![Vue d'ensemble du VNet](docs/images/shopsphere_vnet.png)
 
 #### Configuration des sous-réseaux
 
-![Configuration des sous-réseaux](docs/images/azure-vnet-subnets.png)
+![Configuration des sous-réseaux](docs/images/shopsphere_vnet_subnet.png)
 
 ### 4.5. Machine virtuelle Linux
 
@@ -163,7 +163,7 @@ La machine virtuelle héberge l’application Flask.
 
 #### Configuration de la machine virtuelle
 
-![Configuration de la VM](docs/images/azure-vm.png)
+![Configuration de la VM](docs/images/shopsphere_vm.png)
 
 ### 4.6. Network Security Group (NSG)
 
@@ -187,7 +187,7 @@ Cette configuration correspond à un environnement de laboratoire. Dans un envir
 
 ### Règles du Network Security Group
 
-![Règles du NSG](docs/images/azure-nsg.png)
+![Règles du NSG](docs/images/shopsphere_nsg.png)
 
 ## 5. Flux de communication
 
@@ -252,7 +252,7 @@ L’intégration effective de cette base dans l’application n’étant pas con
 
 ### Configuration Azure SQL Database
 
-![Configuration Azure SQL](docs/images/azure-sql.png)
+![Configuration Azure SQL](docs/images/shopsphere_db.png)
 
 ### 5.4. Compte Azure Storage
 
@@ -290,7 +290,7 @@ L’utilisation effective de ce compte par l’application n’est pas confirmé
 
 ### Configuration du compte Azure Storage
 
-![Configuration Azure Storage](docs/images/azure-storage.png)
+![Configuration Azure Storage](docs/images/shopsphere_storage.png)
 
 ## 6. Déploiement et vérifications
 
